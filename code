@@ -1,0 +1,18 @@
+# This is a program for a hotdog cookout calculator
+
+num_people = int(input("Enter the number of people: "))
+num_hotdog = int(input("Enter the number of hotdogs per person: "))
+
+hotdogs_pack = 10
+buns_pack = 8
+
+total_hotdogs = num_people * num_hotdog
+hotdog_packs_needed = total_hotdogs // hotdogs_pack
+bun_packs_needed = total_hotdogs // buns_pack
+hotdogs_left = total_hotdogs % hotdogs_pack
+buns_left = total_hotdogs % buns_pack
+
+print("Minimum number of hotdog packs required: ", hotdog_packs_needed)
+print("Minimum number of bun packs required: ", bun_packs_needed)
+print("Number of hotdogs left over: ", hotdogs_left)
+print("Number of buns left over: ", buns_left)
